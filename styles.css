@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+    min-height: 100vh;
+    color: #fff5f5;
+}
+
+body {
+    font-size: 14px;
+    background: linear-gradient( #e03131, #c92a2a );
+}
+
+/* Progress Bar */
+
+.progress-bar {
+    height: 5px;
+    width: 90%;
+    background-color: #fa5252;
+    margin-bottom: 50px;
+    border-radius: 20000000000000000px;
+    position: relative;
+}
+
+.completed {
+    display: inline-block;
+    position: absolute;
+    height: 5px;
+    width: 10%;
+    background-color: #ffffff;
+    border-radius: 2000000000000000px;
+    transition: width 1000ms;
+}
+
+/* Questions Counter */
+
+.questions-counter {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    color: #ffc9c9;
+}
+
+/* Question Form */
+
+.question-form {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translate(0, -10%);
+    position: relative;
+}
+
+/* Question Boxes */
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.question-box {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    width: 900px;
+    animation: fadeIn 1000ms;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.active-question {
+    display: flex;
+}
+
+/* Questions */
+
+h1 {
+    font-size: 60px;
+    margin-bottom: 50px;
+    color: white;
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+}
+
+ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 40px;
+    width: 100%;
+}
+
+/* Individual Questions */
+
+ul li {
+    border: solid 2.5px white;
+    font-size: 30px;
+    font-weight: 600;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 1px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul li:hover {
+    border: solid 2.5px white;
+    background-color: white;
+    color: #c92a2a;
+    
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    position: absolute;
+    bottom: 0;
+}
+
+/* .completed {
+    display: inline-block;
+    height: 2px;
+    width: 600px;
+    border: solid 2px rgb(255, 255, 255);
+    margin-bottom: 40px;
+} */
+
+@media all and (max-width: 900px) {
+    ul {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 50px;
+        margin-bottom: 50px;
+    }
+
+    .question-box {
+        width: 500px;
+    }
+}
