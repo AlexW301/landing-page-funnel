@@ -255,6 +255,12 @@ document.querySelector('.q7-submit-btn').onclick = () => {
         lastName: formData[1][1],
         email: formData[1][2],
         phone: formData[1][3],
+        purchaseOrRefi: formData[0],
+        credit: formData[2],
+        employment: formData[3],
+        location: formData[4],
+        propertyType: formData[5],
+        loanAmount: formData[6],
         date: Date()
     }).then((docRef) => {
         console.log("Document written with ID: ", docRef.id);
