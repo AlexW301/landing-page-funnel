@@ -55,7 +55,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transform: translate(0, -10%);
+    
 }
 
 /* Question Boxes */
@@ -177,6 +177,8 @@ input {
     width: auto;
     position: absolute;
     bottom: 0px;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 /* Back Button */
