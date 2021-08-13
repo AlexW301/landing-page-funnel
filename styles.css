@@ -168,6 +168,11 @@ input {
     justify-content: center;
 }
 
+.next-button:hover {
+    background-color: #ff6b6b;
+
+}
+
 .logo {
     height: 100px;
     width: auto;
@@ -206,3 +211,25 @@ input {
     }
     
 }
+
+
+
+
+
+
+
+
+
+
+
+/* .slider-box {
+    width: 100%;
+}
+
+.slider {
+    width: 90%;
+    background-color: transparent;
+    box-shadow: none;
+    background-color: #fff5f5;
+    color: #fff;
+}  */

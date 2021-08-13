@@ -30,3 +30,19 @@ document.querySelector('.next-button').onclick = () => {
     document.querySelector('.q3').classList.add('active-question')
     document.querySelector('.completed').style.width = '40%';
 }
+
+document.querySelector('.q3-yes').onclick = () => {
+    //Grab input info
+    document.querySelector('.q3').classList.remove('active-question')
+    //Show next question
+    document.querySelector('.q4').classList.add('active-question')
+    document.querySelector('.completed').style.width = '60%';
+}
+
+document.querySelector('.q3-no').onclick = () => {
+    //Grab input info
+    document.querySelector('.q3').classList.remove('active-question')
+    //Show next question
+    document.querySelector('.q4').classList.add('active-question')
+    document.querySelector('.completed').style.width = '60%';
+}
