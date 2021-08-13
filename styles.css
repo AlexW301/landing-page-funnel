@@ -30,7 +30,7 @@ body {
     display: inline-block;
     position: absolute;
     height: 5px;
-    width: 10%;
+    width: 14%;
     background-color: #ffffff;
     border-radius: 2000000000000000px;
     transition: width 1000ms;
@@ -56,7 +56,6 @@ body {
     justify-content: center;
     align-items: center;
     transform: translate(0, -10%);
-    position: relative;
 }
 
 /* Question Boxes */
@@ -154,7 +153,7 @@ input {
     cursor: pointer;
     border: none;
     background-color: #fa5252;
-    width: 150px;
+    width: 160px;
     border-radius: 200px;
     color: #fff5f5;
     text-transform: uppercase;
@@ -177,7 +176,27 @@ input {
     height: 100px;
     width: auto;
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
+}
+
+/* Back Button */
+
+.back-button {
+    background-color: transparent;
+    cursor: pointer;
+    padding: 5px;
+    border: none;
+    position: absolute;
+    left: 10px;
+    top: 15px;
+}
+
+.back-button:hover > .back-button-icon {
+    fill: #fff5f5
+}
+
+.back-button-icon {
+    transform: rotateY(180deg);
 }
 
 /* .completed {
