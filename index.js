@@ -44,7 +44,7 @@ document.querySelector('.q2-next-btn').onclick = () => {
 
 // QUESTION #3 ESTIMATE YOUR CREDIT SCORE
 
-document.querySelector('.q3-yes').onclick = () => {
+document.querySelector('.q3-excellent').onclick = () => {
     //Grab input info
     document.querySelector('.q3').classList.remove('active-question')
     //Show next question
@@ -52,7 +52,31 @@ document.querySelector('.q3-yes').onclick = () => {
     document.querySelector('.completed').style.width = '56%';
 }
 
-document.querySelector('.q3-no').onclick = () => {
+document.querySelector('.q3-good').onclick = () => {
+    //Grab input info
+    document.querySelector('.q3').classList.remove('active-question')
+    //Show next question
+    document.querySelector('.q4').classList.add('active-question')
+    document.querySelector('.completed').style.width = '56%';
+}
+
+document.querySelector('.q3-average').onclick = () => {
+    //Grab input info
+    document.querySelector('.q3').classList.remove('active-question')
+    //Show next question
+    document.querySelector('.q4').classList.add('active-question')
+    document.querySelector('.completed').style.width = '56%';
+}
+
+document.querySelector('.q3-fair').onclick = () => {
+    //Grab input info
+    document.querySelector('.q3').classList.remove('active-question')
+    //Show next question
+    document.querySelector('.q4').classList.add('active-question')
+    document.querySelector('.completed').style.width = '56%';
+}
+
+document.querySelector('.q3-under').onclick = () => {
     //Grab input info
     document.querySelector('.q3').classList.remove('active-question')
     //Show next question
@@ -63,6 +87,38 @@ document.querySelector('.q3-no').onclick = () => {
 // QUESTION #4 WHAT IS YOUR EMPLOYMENT STATUS
 
 document.querySelector('.q4-employed').onclick = () => {
+    //Grab input info
+    document.querySelector('.q4').classList.remove('active-question')
+    //Show next question
+    document.querySelector('.q5').classList.add('active-question')
+    document.querySelector('.completed').style.width = '70%';
+}
+
+document.querySelector('.q4-not-employed').onclick = () => {
+    //Grab input info
+    document.querySelector('.q4').classList.remove('active-question')
+    //Show next question
+    document.querySelector('.q5').classList.add('active-question')
+    document.querySelector('.completed').style.width = '70%';
+}
+
+document.querySelector('.q4-self-employed').onclick = () => {
+    //Grab input info
+    document.querySelector('.q4').classList.remove('active-question')
+    //Show next question
+    document.querySelector('.q5').classList.add('active-question')
+    document.querySelector('.completed').style.width = '70%';
+}
+
+document.querySelector('.q4-military').onclick = () => {
+    //Grab input info
+    document.querySelector('.q4').classList.remove('active-question')
+    //Show next question
+    document.querySelector('.q5').classList.add('active-question')
+    document.querySelector('.completed').style.width = '70%';
+}
+
+document.querySelector('.q4-retired').onclick = () => {
     //Grab input info
     document.querySelector('.q4').classList.remove('active-question')
     //Show next question
@@ -88,4 +144,46 @@ document.querySelector('.q6-single-family').onclick = () => {
     //Show next question
     document.querySelector('.q7').classList.add('active-question')
     document.querySelector('.completed').style.width = '98%';
+}
+
+document.querySelector('.q6-2to4').onclick = () => {
+    //Grab input info
+    document.querySelector('.q6').classList.remove('active-question')
+    //Show next question
+    document.querySelector('.q7').classList.add('active-question')
+    document.querySelector('.completed').style.width = '98%';
+}
+
+document.querySelector('.q6-condo').onclick = () => {
+    //Grab input info
+    document.querySelector('.q6').classList.remove('active-question')
+    //Show next question
+    document.querySelector('.q7').classList.add('active-question')
+    document.querySelector('.completed').style.width = '98%';
+}
+
+document.querySelector('.q6-town-house').onclick = () => {
+    //Grab input info
+    document.querySelector('.q6').classList.remove('active-question')
+    //Show next question
+    document.querySelector('.q7').classList.add('active-question')
+    document.querySelector('.completed').style.width = '98%';
+}
+
+document.querySelector('.q6-other').onclick = () => {
+    //Grab input info
+    document.querySelector('.q6').classList.remove('active-question')
+    //Show next question
+    document.querySelector('.q7').classList.add('active-question')
+    document.querySelector('.completed').style.width = '98%';
+}
+
+// QUESTION #7 DESIRED LOAN AMOUNT
+
+document.querySelector('.q7-submit-btn').onclick = () => {
+    // //Grab input info
+    // document.querySelector('.q6').classList.remove('active-question')
+    // //Show next question
+    // document.querySelector('.q7').classList.add('active-question')
+    // document.querySelector('.completed').style.width = '98%';
 }
