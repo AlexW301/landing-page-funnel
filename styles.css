@@ -243,6 +243,12 @@ input {
     left: 50%;
     transform: translate(-50%);
 } */
+
+.logo {
+    height: 60px;
+    width: auto;
+    margin-bottom: 10px;
+}
     
 
 }
