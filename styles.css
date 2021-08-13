@@ -177,10 +177,11 @@ input {
 .logo {
     height: 100px;
     width: auto;
-    position: absolute;
+    margin-bottom: 20px;
+    /* position: absolute;
     bottom: 0px;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-50%); */
 }
 
 /* Back Button */
@@ -234,15 +235,16 @@ input {
     }
 
 
-.logo {
+/* .logo {
     height: 50px;
     width: auto;
     position: fixed;
     bottom: 0px;
     left: 50%;
     transform: translate(-50%);
-}
+} */
     
+
 }
 
 
