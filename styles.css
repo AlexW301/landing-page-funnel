@@ -232,6 +232,16 @@ input {
         flex-direction: column;
         gap: 20px;
     }
+
+
+.logo {
+    height: 50px;
+    width: auto;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%);
+}
     
 }
 
