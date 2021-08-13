@@ -237,7 +237,7 @@ input {
 .logo {
     height: 50px;
     width: auto;
-    position: sticky;
+    position: fixed;
     bottom: 0px;
     left: 50%;
     transform: translate(-50%);
