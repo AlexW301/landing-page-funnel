@@ -22,3 +22,11 @@ document.querySelector('.q1-no').onclick = () => {
     document.querySelector('.q2').classList.add('active-question')
     document.querySelector('.completed').style.width = '20%';
 }
+
+document.querySelector('.next-button').onclick = () => {
+    //Grab input info
+    document.querySelector('.q2').classList.remove('active-question')
+    //Show next question
+    document.querySelector('.q3').classList.add('active-question')
+    document.querySelector('.completed').style.width = '40%';
+}
