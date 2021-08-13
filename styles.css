@@ -151,7 +151,7 @@ ul li:hover {
 
 .warning-text-name {
     position: absolute;
-    top: 46px;
+    top: 48px;
     left: 50%;
     transform: translate(-50%);
     font-size: 14px;
@@ -162,7 +162,7 @@ ul li:hover {
 
 .warning-text-email {
     position: absolute;
-    top: 116px;
+    top: 118px;
     left: 50%;
     transform: translate(-50%);
     font-size: 14px;
