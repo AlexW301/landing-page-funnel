@@ -196,5 +196,13 @@ input {
     .question-box {
         width: 390px;
     }
+
+    .text-input-box {
+        width: 93%;
+    
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
     
 }
