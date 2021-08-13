@@ -22,9 +22,9 @@
                 </button> -->
             </div>
             <div class="question-box q1 active-question">
-                    <strong class="questions-counter">
-                        question 1 of 7
-                    </strong>
+                <strong class="questions-counter">
+                    question 1 of 7
+                </strong>
                 <h1>How Can we help you?</h1>
                 <ul class="opt-list">
                     <li class="answer-btn q1-purchase">
@@ -175,13 +175,36 @@
                         <source src="./placeholder.mov" type="video/mp4">
                     </video>
                     <p>Fill out the application below if you wish to continue!</p>
-                    <button class="next-button q7-submit-btn">Apply →</button>
+                    <button class="next-button q8-apply-btn" type="button">Apply →</button>
                 </div>
             </div>
 
         </div>
     </form>
-    
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyCTRdKsDr3i7M8O174iKDqVT6COPBcYg0M",
+            authDomain: "yt-ad-funnel.firebaseapp.com",
+            projectId: "yt-ad-funnel",
+            storageBucket: "yt-ad-funnel.appspot.com",
+            messagingSenderId: "937159665448",
+            appId: "1:937159665448:web:fe078ee753fd7ac8eb121d",
+            measurementId: "G-Y3YVZ85JW0"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
     <script src="./index.js"></script>
 </body>
 

@@ -173,11 +173,13 @@ document.querySelector('.q4-retired').onclick = () => {
 document.querySelector('.q5-next-btn').onclick = () => {
     //Grab input info
     let location = document.querySelector('.location-input').value
-    formData[4] = location
+    if (location != '') {
+        formData[4] = location
     document.querySelector('.q5').classList.remove('active-question')
     //Show next question
     document.querySelector('.q6').classList.add('active-question')
     document.querySelector('.completed').style.width = '84%';
+    }
 }
 
 document.querySelector('.not-sure-btn').onclick = () => {
@@ -198,7 +200,7 @@ document.querySelector('.q6-single-family').onclick = () => {
     document.querySelector('.q6').classList.remove('active-question')
     //Show next question
     document.querySelector('.q7').classList.add('active-question')
-    document.querySelector('.completed').style.width = '100%';
+    document.querySelector('.completed').style.width = '98%';
 }
 
 document.querySelector('.q6-2to4').onclick = () => {
@@ -208,7 +210,7 @@ document.querySelector('.q6-2to4').onclick = () => {
     document.querySelector('.q6').classList.remove('active-question')
     //Show next question
     document.querySelector('.q7').classList.add('active-question')
-    document.querySelector('.completed').style.width = '100%';
+    document.querySelector('.completed').style.width = '98%';
 }
 
 document.querySelector('.q6-condo').onclick = () => {
@@ -218,7 +220,7 @@ document.querySelector('.q6-condo').onclick = () => {
     document.querySelector('.q6').classList.remove('active-question')
     //Show next question
     document.querySelector('.q7').classList.add('active-question')
-    document.querySelector('.completed').style.width = '100%';
+    document.querySelector('.completed').style.width = '98%';
 }
 
 document.querySelector('.q6-town-house').onclick = () => {
@@ -227,7 +229,7 @@ document.querySelector('.q6-town-house').onclick = () => {
     document.querySelector('.q6').classList.remove('active-question')
     //Show next question
     document.querySelector('.q7').classList.add('active-question')
-    document.querySelector('.completed').style.width = '100%';
+    document.querySelector('.completed').style.width = '98%';
 }
 
 document.querySelector('.q6-other').onclick = () => {
@@ -236,7 +238,7 @@ document.querySelector('.q6-other').onclick = () => {
     document.querySelector('.q6').classList.remove('active-question')
     //Show next question
     document.querySelector('.q7').classList.add('active-question')
-    document.querySelector('.completed').style.width = '100%';
+    document.querySelector('.completed').style.width = '98%';
 }
 
 // QUESTION #7 DESIRED LOAN AMOUNT
@@ -244,9 +246,31 @@ document.querySelector('.q6-other').onclick = () => {
 document.querySelector('.q7-submit-btn').onclick = () => {
     //Grab input info
     let loanAmount = document.querySelector('.amount-input').value
+    if (loanAmount != '') {
+    //update last item in array
     formData[6] = loanAmount
+    //Send the data to firebase
+    firebase.firestore().collection("completed-funnels").add({
+        firstName: formData[1][0],
+        lastName: formData[1][1],
+        email: formData[1][2],
+        phone: formData[1][3],
+        date: Date()
+    }).then((docRef) => {
+        console.log("Document written with ID: ", docRef.id);
+    })
+        .catch((error) => {
+            console.error("Error adding document: ", error);
+        });
+    //Go to the next screen
     document.querySelector('.q7').classList.remove('active-question')
     //Show next question
     document.querySelector('.q8').classList.add('active-question')
     document.querySelector('.completed').style.width = '100%';
+    }
+}
+
+document.querySelector('.q8-apply-btn').onclick = () => {
+    console.log('sdfsd')
+    window.location.href = 'https://www.blink.mortgage/app/signup/p/premiermortgagelendingllc/'
 }
