@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,17 +8,18 @@
     <title>Landing Page Funnel</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
     <form class="question-form" action="#">
         <a href="#" class="back"></a>
 
         <div class="questions">
-            <div class="progress-bar"> 
+            <div class="progress-bar">
                 <div class="completed"></div>
             </div>
             <div class="question-box q1 active-question">
                 <strong class="questions-counter">
-                    question 1 of  8
+                    question 1 of 8
                 </strong>
                 <h1>Do you own a home?</h1>
                 <ul class="opt-list">
@@ -42,7 +44,23 @@
 
             <div class="question-box q2">
                 <strong class="questions-counter">
-                    question 2 of  8
+                    question 2 of 8
+                </strong>
+                <h1>Let's Get to Know You</h1>
+                <div class="text-input-box">
+                    <input type="text" class="name-input" placeholder="Full Name">
+
+                    <input type="text" class="email-input" placeholder="Email">
+
+                    <input type="text" class="phone-input" placeholder="Phone Number">
+
+                    <button class="next-button">Next →</button>
+                </div>
+            </div>
+
+            <div class="question-box q3">
+                <strong class="questions-counter">
+                    question 3 of 8
                 </strong>
                 <h1>Do you have good credit?</h1>
                 <ul class="opt-list">
@@ -70,4 +88,5 @@
 
     <script src="./index.js"></script>
 </body>
+
 </html>

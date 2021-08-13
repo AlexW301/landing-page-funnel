@@ -131,6 +131,43 @@ ul li:hover {
     
 }
 
+/* Text Input */
+
+.text-input-box {
+    width: 60%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input {
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.014), 0 0px 10px 0 rgba(0,0,0,0.05);
+}
+
+.next-button {
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    background-color: #fa5252;
+    width: 150px;
+    border-radius: 200px;
+    color: #fff5f5;
+    text-transform: uppercase;
+    padding: 16px 32px;
+    align-self: center;
+    margin-top: 20px;
+    font-size: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .logo {
     height: 100px;
     width: auto;
@@ -159,4 +196,5 @@ ul li:hover {
     .question-box {
         width: 390px;
     }
+    
 }
