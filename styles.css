@@ -237,7 +237,7 @@ input {
 .logo {
     height: 50px;
     width: auto;
-    position: absolute;
+    position: sticky;
     bottom: 0px;
     left: 50%;
     transform: translate(-50%);
@@ -249,14 +249,6 @@ input {
 
 /* NAME EMAIL VALIDTION */
 
-.enter-email,
-.enter-name {
-    position: absolute;
-    bottom: -20px;
-    left: 10px;
-    color: #c92a2a;
-    display: flex;
-}
 
 
 
