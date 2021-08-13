@@ -249,6 +249,10 @@ input {
     width: auto;
     margin-bottom: 10px;
 }
+
+.question-form {
+    padding: 1.5vh;
+}
     
 
 }
