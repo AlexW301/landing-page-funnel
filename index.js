@@ -58,10 +58,18 @@ document.querySelector('.q2-next-btn').onclick = () => {
         document.querySelector('.q3').classList.add('active-question')
         document.querySelector('.completed').style.width = '42%';
     } if (fullName.indexOf(' ') === -1) {
-        alert('Please Enter Full Name')
+        document.querySelector('.warning-text-name').style.display = 'block'
     } if (email.indexOf('@') === -1) {
-        alert('Please Enter Valid Email')
+        document.querySelector('.warning-text-email').style.display = 'block'
     }
+}
+
+document.querySelector('.name-input').onclick = () => {
+    document.querySelector('.warning-text-name').style.display = 'none'
+}
+
+document.querySelector('.email-input').onclick = () => {
+    document.querySelector('.warning-text-email').style.display = 'none'
 }
 
 // QUESTION #3 ESTIMATE YOUR CREDIT SCORE

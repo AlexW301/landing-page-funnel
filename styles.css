@@ -142,10 +142,33 @@ ul li:hover {
 
 .text-input-box {
     width: 60%;
+    position: relative;
 
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 25px;
+}
+
+.warning-text-name {
+    position: absolute;
+    top: 46px;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 14px;
+    display: none;
+    color: #ffc9c9;
+    animation: fadeIn 500ms;
+}
+
+.warning-text-email {
+    position: absolute;
+    top: 116px;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 14px;
+    display: none;
+    color: #ffc9c9;
+    animation: fadeIn 500ms;
 }
 
 input {
@@ -259,10 +282,11 @@ video {
 
     .text-input-box {
         width: 93%;
-    
+        position: relative;
+        
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 25px;
     }
 
 
