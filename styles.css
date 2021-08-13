@@ -247,9 +247,16 @@ input {
 
 
 
+/* NAME EMAIL VALIDTION */
 
-
-
+.enter-email,
+.enter-name {
+    position: absolute;
+    bottom: -20px;
+    left: 10px;
+    color: #c92a2a;
+    display: flex;
+}
 
 
 
