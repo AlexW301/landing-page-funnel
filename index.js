@@ -189,7 +189,7 @@ document.querySelector('.q6-single-family').onclick = () => {
     document.querySelector('.q6').classList.remove('active-question')
     //Show next question
     document.querySelector('.q7').classList.add('active-question')
-    document.querySelector('.completed').style.width = '98%';
+    document.querySelector('.completed').style.width = '100%';
 }
 
 document.querySelector('.q6-2to4').onclick = () => {
@@ -199,7 +199,7 @@ document.querySelector('.q6-2to4').onclick = () => {
     document.querySelector('.q6').classList.remove('active-question')
     //Show next question
     document.querySelector('.q7').classList.add('active-question')
-    document.querySelector('.completed').style.width = '98%';
+    document.querySelector('.completed').style.width = '100%';
 }
 
 document.querySelector('.q6-condo').onclick = () => {
@@ -209,7 +209,7 @@ document.querySelector('.q6-condo').onclick = () => {
     document.querySelector('.q6').classList.remove('active-question')
     //Show next question
     document.querySelector('.q7').classList.add('active-question')
-    document.querySelector('.completed').style.width = '98%';
+    document.querySelector('.completed').style.width = '100%';
 }
 
 document.querySelector('.q6-town-house').onclick = () => {
@@ -218,7 +218,7 @@ document.querySelector('.q6-town-house').onclick = () => {
     document.querySelector('.q6').classList.remove('active-question')
     //Show next question
     document.querySelector('.q7').classList.add('active-question')
-    document.querySelector('.completed').style.width = '98%';
+    document.querySelector('.completed').style.width = '100%';
 }
 
 document.querySelector('.q6-other').onclick = () => {
@@ -227,7 +227,7 @@ document.querySelector('.q6-other').onclick = () => {
     document.querySelector('.q6').classList.remove('active-question')
     //Show next question
     document.querySelector('.q7').classList.add('active-question')
-    document.querySelector('.completed').style.width = '98%';
+    document.querySelector('.completed').style.width = '100%';
 }
 
 // QUESTION #7 DESIRED LOAN AMOUNT
@@ -239,5 +239,5 @@ document.querySelector('.q7-submit-btn').onclick = () => {
     document.querySelector('.q7').classList.remove('active-question')
     //Show next question
     document.querySelector('.q8').classList.add('active-question')
-    document.querySelector('.completed').style.width = '98%';
+    document.querySelector('.completed').style.width = '100%';
 }
