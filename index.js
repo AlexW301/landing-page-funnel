@@ -180,6 +180,15 @@ document.querySelector('.q5-next-btn').onclick = () => {
     document.querySelector('.completed').style.width = '84%';
 }
 
+document.querySelector('.not-sure-btn').onclick = () => {
+    //Grab input info
+    formData[4] = 'Not Sure'
+    document.querySelector('.q5').classList.remove('active-question')
+    //Show next question
+    document.querySelector('.q6').classList.add('active-question')
+    document.querySelector('.completed').style.width = '84%';
+}
+
 // QUESTION #6 PROPERTY TYPE
 
 document.querySelector('.q6-single-family').onclick = () => {

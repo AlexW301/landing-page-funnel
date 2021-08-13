@@ -180,6 +180,23 @@ input {
 
 }
 
+.not-sure-btn {
+    background-color: transparent;
+    width: fit-content;
+    border: none;
+    padding: 0 10px;
+    align-self: center;
+    margin-top: -10px;
+    color: #fff5f5;
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.not-sure-btn:active {
+    color: #ffc9c9;
+}
+
 .logo {
     height: 100px;
     width: auto;
