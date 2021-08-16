@@ -287,7 +287,6 @@ document.querySelector('.q7-submit-btn').onclick = () => {
 // QUESTION #8 APPLY NOW BUTTON
 
 document.querySelector('.q8-apply-btn').onclick = () => {
-    console.log('sdfsd')
     window.location.href = 'https://www.blink.mortgage/app/signup/p/premiermortgagelendingllc/michaelcomerfordg'
 }
 
