@@ -51,6 +51,7 @@ p {
     letter-spacing: 2px;
     margin-bottom: 5px;
     color: #ffc9c9;
+    position: relative;
 }
 
 /* Question Form */
@@ -238,8 +239,8 @@ input {
     padding: 5px;
     border: none;
     position: absolute;
-    left: 10px;
-    top: 15px;
+    right: 450px;
+    bottom: 25px;
 }
 
 .back-button:hover > .back-button-icon {
@@ -248,6 +249,7 @@ input {
 
 .back-button-icon {
     transform: rotateY(180deg);
+    fill: #ffa8a8;
 }
 
 /* VIDEO */
@@ -287,6 +289,22 @@ video {
         display: flex;
         flex-direction: column;
         gap: 25px;
+    }
+
+    .back-button {
+        background-color: transparent;
+        cursor: pointer;
+        padding: 5px;
+        border: none;
+        position: absolute;
+        right: 220px;
+        bottom: 35px;
+    }
+
+    .back-button-icon {
+        transform: rotateY(180deg);
+        height: 12px;
+        width: 24px;
     }
 
 

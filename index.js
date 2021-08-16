@@ -284,7 +284,71 @@ document.querySelector('.q7-submit-btn').onclick = () => {
     }
 }
 
+// QUESTION #8 APPLY NOW BUTTON
+
 document.querySelector('.q8-apply-btn').onclick = () => {
     console.log('sdfsd')
     window.location.href = 'https://www.blink.mortgage/app/signup/p/premiermortgagelendingllc/'
+}
+
+// BACK BUTTONS
+
+// Q2 BACK
+
+document.querySelector('.q2-back').onclick = () => {
+    //REMOVE CURRENT SCREEN
+    document.querySelector('.q2').classList.remove('active-question')
+    //ADD PREVIOUS SCREEN
+    document.querySelector('.q1').classList.add('active-question')
+    document.querySelector('.completed').style.width = '14%';
+}
+
+// Q3 BACK
+
+document.querySelector('.q3-back').onclick = () => {
+    //REMOVE CURRENT SCREEN
+    document.querySelector('.q3').classList.remove('active-question')
+    //ADD PREVIOUS SCREEN
+    document.querySelector('.q2').classList.add('active-question')
+    document.querySelector('.completed').style.width = '28%';
+}
+
+// Q4 BACK
+
+document.querySelector('.q4-back').onclick = () => {
+    //REMOVE CURRENT SCREEN
+    document.querySelector('.q4').classList.remove('active-question')
+    //ADD PREVIOUS SCREEN
+    document.querySelector('.q3').classList.add('active-question')
+    document.querySelector('.completed').style.width = '42%';
+}
+
+// Q5 BACK
+
+document.querySelector('.q5-back').onclick = () => {
+    //REMOVE CURRENT SCREEN
+    document.querySelector('.q5').classList.remove('active-question')
+    //ADD PREVIOUS SCREEN
+    document.querySelector('.q4').classList.add('active-question')
+    document.querySelector('.completed').style.width = '56%';
+}
+
+// Q6 BACK
+
+document.querySelector('.q6-back').onclick = () => {
+    //REMOVE CURRENT SCREEN
+    document.querySelector('.q6').classList.remove('active-question')
+    //ADD PREVIOUS SCREEN
+    document.querySelector('.q5').classList.add('active-question')
+    document.querySelector('.completed').style.width = '70%';
+}
+
+// Q7 BACK
+
+document.querySelector('.q7-back').onclick = () => {
+    //REMOVE CURRENT SCREEN
+    document.querySelector('.q7').classList.remove('active-question')
+    //ADD PREVIOUS SCREEN
+    document.querySelector('.q6').classList.add('active-question')
+    document.querySelector('.completed').style.width = '84%';
 }
