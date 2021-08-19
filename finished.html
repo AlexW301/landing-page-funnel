@@ -1,15 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Finished</title>
-    <style>
-
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <h1>Test</h1>
+    <form class="question-form" action="#">
+        <div class="questions">
+            <img src="./pmlquizlogo.png" alt="logo" class="logo">
+            <div class="progress-bar">
+                <div class="completed"></div>
+            </div>
+
+            <div class="question-box q8 active-question">
+                <strong class="questions-counter">
+                    COMPLETED
+                </strong>
+                <h1 class="video-title">Thank You!</h1>
+                <div class="text-input-box">
+                    <video controls>
+                        <source src="./placeholder.mov" type="video/mp4">
+                    </video>
+                    <p>Fill out the application below if you wish to continue!</p>
+                    <button class="next-button q8-apply-btn" type="button">Apply →</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script>
+        document.querySelector('.completed').style.width = '98%';
+        document.querySelector('.completed').style.width = '100%';
+        // QUESTION #8 APPLY NOW BUTTON
+
+    document.querySelector('.q8-apply-btn').onclick = () => {
+    window.location.href = 'https://www.blink.mortgage/app/signup/p/premiermortgagelendingllc/michaelcomerfordg'
+}
+    </script>
 </body>
+
 </html>

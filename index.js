@@ -94,10 +94,10 @@ document.querySelector('.q3-next-btn').onclick = () => {
     let location = document.querySelector('.location-input').value
     if (location != '') {
         formData[2] = location
-    document.querySelector('.q3').classList.remove('active-question')
-    //Show next question
-    document.querySelector('.q4').classList.add('active-question')
-    document.querySelector('.completed').style.width = '56%';
+        document.querySelector('.q3').classList.remove('active-question')
+        //Show next question
+        document.querySelector('.q4').classList.add('active-question')
+        document.querySelector('.completed').style.width = '56%';
     }
 }
 
@@ -116,13 +116,13 @@ document.querySelector('.q4-next-btn').onclick = () => {
     //Grab input info
     let loanAmount = document.querySelector('.amount-input').value
     if (loanAmount != '') {
-    //update last item in array
-    formData[3] = loanAmount
-    //Go to the next screen
-    document.querySelector('.q4').classList.remove('active-question')
-    //Show next question
-    document.querySelector('.q5').classList.add('active-question')
-    document.querySelector('.completed').style.width = '70%';
+        //update last item in array
+        formData[3] = loanAmount
+        //Go to the next screen
+        document.querySelector('.q4').classList.remove('active-question')
+        //Show next question
+        document.querySelector('.q5').classList.add('active-question')
+        document.querySelector('.completed').style.width = '70%';
     }
 }
 
@@ -245,10 +245,33 @@ document.querySelector('.q7-submit-btn').onclick = () => {
         //Split name
         let nameArr = fullName.split(" ")
         let firstName = nameArr[0]
-        let lastName = nameArr[1] 
+        let lastName = nameArr[1]
         formData[6] = [firstName, lastName, email, phone]
         //
-        window.location.href = '/finished.html'
+        document.querySelector('.completed').style.width = '100%';
+        //Send the data to firebase
+        firebase.firestore().collection("completed-funnels").add({
+            firstName: formData[6][0],
+            lastName: formData[6][1],
+            email: formData[6][2],
+            phone: formData[6][3],
+            purchaseOrRefi: formData[0],
+            propertyType: formData[1],
+            location: formData[2],
+            loanAmount: formData[3],
+            employment: formData[4],
+            credit: formData[5],
+            date: Date()
+        }).then((docRef) => {
+            console.log("Document written with ID: ", docRef.id);
+            // GO TO FINISH PAGE
+            window.location.href = '/finished.html'
+        })
+            .catch((error) => {
+                console.error("Error adding document: ", error);
+            });
+
+
     } if (fullName.indexOf(' ') === -1) {
         document.querySelector('.warning-text-name').style.display = 'block'
     } if (email.indexOf('@') === -1) {
@@ -279,46 +302,41 @@ document.querySelector('.email-input').onclick = () => {
 
 
 
-// QUESTION #7 DESIRED LOAN AMOUNT
+// // QUESTION #7 DESIRED LOAN AMOUNT
 
 // document.querySelector('.q7-submit-btn').onclick = () => {
 //     //Grab input info
 //     let loanAmount = document.querySelector('.amount-input').value
 //     if (loanAmount != '') {
-//     //update last item in array
-//     formData[6] = loanAmount
-//     //Send the data to firebase
-//     firebase.firestore().collection("completed-funnels").add({
-//         firstName: formData[1][0],
-//         lastName: formData[1][1],
-//         email: formData[1][2],
-//         phone: formData[1][3],
-//         purchaseOrRefi: formData[0],
-//         credit: formData[2],
-//         employment: formData[3],
-//         location: formData[4],
-//         propertyType: formData[5],
-//         loanAmount: formData[6],
-//         date: Date()
-//     }).then((docRef) => {
-//         console.log("Document written with ID: ", docRef.id);
-//     })
-//         .catch((error) => {
-//             console.error("Error adding document: ", error);
-//         });
-//     //Go to the next screen
-//     document.querySelector('.q7').classList.remove('active-question')
-//     //Show next question
-//     document.querySelector('.q8').classList.add('active-question')
-//     document.querySelector('.completed').style.width = '100%';
+//         //update last item in array
+//         formData[6] = loanAmount
+//         //Send the data to firebase
+//         firebase.firestore().collection("completed-funnels").add({
+//             firstName: formData[1][0],
+//             lastName: formData[1][1],
+//             email: formData[1][2],
+//             phone: formData[1][3],
+//             purchaseOrRefi: formData[0],
+//             credit: formData[2],
+//             employment: formData[3],
+//             location: formData[4],
+//             propertyType: formData[5],
+//             loanAmount: formData[6],
+//             date: Date()
+//         }).then((docRef) => {
+//             console.log("Document written with ID: ", docRef.id);
+//         })
+//             .catch((error) => {
+//                 console.error("Error adding document: ", error);
+//             });
+//         //Go to the next screen
+//         document.querySelector('.q7').classList.remove('active-question')
+//         //Show next question
+//         document.querySelector('.q8').classList.add('active-question')
+//         document.querySelector('.completed').style.width = '100%';
 //     }
 // }
 
-// QUESTION #8 APPLY NOW BUTTON
-
-document.querySelector('.q8-apply-btn').onclick = () => {
-    window.location.href = 'https://www.blink.mortgage/app/signup/p/premiermortgagelendingllc/michaelcomerfordg'
-}
 
 // BACK BUTTONS
 
