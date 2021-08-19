@@ -16,6 +16,7 @@
             <div class="progress-bar">
                 <div class="completed"></div>
             </div>
+
             <div class="question-box q1 active-question">
                 <strong class="questions-counter">
                     question 1 of 7
@@ -42,16 +43,29 @@
                         </svg>
                     </button>
                 </strong>
-                <h1>Let's Get to Know You</h1>
-                <div class="text-input-box">
-                    <input type="text" class="name-input" placeholder="Full Name" name="name">
-                    <span class="warning-text-name">Please Enter Your Full Name</span>
-                    <input type="text" class="email-input" placeholder="Email" name="email">
-                    <span class="warning-text-email">Please Enter a Valid Email</span>
-                    <input type="text" class="phone-input" placeholder="Phone Number" name="phone">
-
-                    <button class="next-button q2-next-btn" type="button">Next →</button>
-                </div>
+                <h1>Property Type?</h1>
+                <ul class="opt-list">
+                    <li class="answer-btn q2-single-family">
+                        <div class="select-icon"></div>
+                        <span class="question-text">Single Family</span>
+                    </li>
+                    <li class="answer-btn q2-2to4">
+                        <div class="select-icon"></div>
+                        <span class="question-text">2-4 Unit</span>
+                    </li>
+                    <li class="answer-btn q2-condo">
+                        <div class="select-icon"></div>
+                        <span class="question-text">Condo</span>
+                    </li>
+                    <li class="answer-btn q2-town-house">
+                        <div class="select-icon"></div>
+                        <span class="question-text">Town House</span>
+                    </li>
+                    <li class="answer-btn q2-other">
+                        <div class="select-icon"></div>
+                        <span class="question-text">Other</span>
+                    </li>
+                </ul>
             </div>
 
             <div class="question-box q3">
@@ -63,29 +77,12 @@
                         </svg>
                     </button>
                 </strong>
-                <h1>Estimate Your Credit Score</h1>
-                <ul class="opt-list">
-                    <li class="answer-btn q3-excellent">
-                        <div class="select-icon"></div>
-                        <span class="question-text">Excellent 740+</span>
-                    </li>
-                    <li class="answer-btn q3-good">
-                        <div class="select-icon"></div>
-                        <span class="question-text">Good 700-739</span>
-                    </li>
-                    <li class="answer-btn q3-average">
-                        <div class="select-icon"></div>
-                        <span class="question-text">Average 660-699</span>
-                    </li>
-                    <li class="answer-btn q3-fair">
-                        <div class="select-icon"></div>
-                        <span class="question-text">Fair 600-659</span>
-                    </li>
-                    <li class="answer-btn q3-under">
-                        <div class="select-icon"></div>
-                        <span class="question-text">Under 600</span>
-                    </li>
-                </ul>
+                <h1>Property Location?</h1>
+                <div class="text-input-box">
+                    <input type="text" class="location-input" placeholder="Ex. Salem, NH">
+                    <button class="not-sure-btn" type="button">Not Sure?</button>
+                    <button class="next-button q3-next-btn" type="button">Next →</button>
+                </div>
             </div>
 
             <div class="question-box q4">
@@ -97,29 +94,12 @@
                         </svg>
                     </button>
                 </strong>
-                <h1>Employment status?</h1>
-                <ul class="opt-list">
-                    <li class="answer-btn q4-employed">
-                        <div class="select-icon"></div>
-                        <span class="question-text">Employed</span>
-                    </li>
-                    <li class="answer-btn q4-not-employed">
-                        <div class="select-icon"></div>
-                        <span class="question-text">Not Employed</span>
-                    </li>
-                    <li class="answer-btn q4-self-employed">
-                        <div class="select-icon"></div>
-                        <span class="question-text">Self Employed</span>
-                    </li>
-                    <li class="answer-btn q4-military">
-                        <div class="select-icon"></div>
-                        <span class="question-text">Military</span>
-                    </li>
-                    <li class="answer-btn q4-retired">
-                        <div class="select-icon"></div>
-                        <span class="question-text">Retired</span>
-                    </li>
-                </ul>
+                <h1>Desired Loan Amount?</h1>
+                <div class="text-input-box">
+                    <input type="text" class="amount-input" placeholder="Ex. $250,000">
+
+                    <button class="next-button q4-next-btn" type="button">Next →</button>
+                </div>
             </div>
 
             <div class="question-box q5">
@@ -131,12 +111,29 @@
                         </svg>
                     </button>
                 </strong>
-                <h1>Property Location?</h1>
-                <div class="text-input-box">
-                    <input type="text" class="location-input" placeholder="Ex. Salem, NH">
-                    <button class="not-sure-btn" type="button">Not Sure?</button>
-                    <button class="next-button q5-next-btn" type="button">Next →</button>
-                </div>
+                <h1>Employment status?</h1>
+                <ul class="opt-list">
+                    <li class="answer-btn q5-employed">
+                        <div class="select-icon"></div>
+                        <span class="question-text">Employed</span>
+                    </li>
+                    <li class="answer-btn q5-not-employed">
+                        <div class="select-icon"></div>
+                        <span class="question-text">Not Employed</span>
+                    </li>
+                    <li class="answer-btn q5-self-employed">
+                        <div class="select-icon"></div>
+                        <span class="question-text">Self Employed</span>
+                    </li>
+                    <li class="answer-btn q5-military">
+                        <div class="select-icon"></div>
+                        <span class="question-text">Military</span>
+                    </li>
+                    <li class="answer-btn q5-retired">
+                        <div class="select-icon"></div>
+                        <span class="question-text">Retired</span>
+                    </li>
+                </ul>
             </div>
 
             <div class="question-box q6">
@@ -148,27 +145,27 @@
                         </svg>
                     </button>
                 </strong>
-                <h1>Property Type?</h1>
+                <h1>Estimate Your Credit Score</h1>
                 <ul class="opt-list">
-                    <li class="answer-btn q6-single-family">
+                    <li class="answer-btn q6-excellent">
                         <div class="select-icon"></div>
-                        <span class="question-text">Single Family</span>
+                        <span class="question-text">Excellent 740+</span>
                     </li>
-                    <li class="answer-btn q6-2to4">
+                    <li class="answer-btn q6-good">
                         <div class="select-icon"></div>
-                        <span class="question-text">2-4 Unit</span>
+                        <span class="question-text">Good 700-739</span>
                     </li>
-                    <li class="answer-btn q6-condo">
+                    <li class="answer-btn q6-average">
                         <div class="select-icon"></div>
-                        <span class="question-text">Condo</span>
+                        <span class="question-text">Average 660-699</span>
                     </li>
-                    <li class="answer-btn q6-town-house">
+                    <li class="answer-btn q6-fair">
                         <div class="select-icon"></div>
-                        <span class="question-text">Town House</span>
+                        <span class="question-text">Fair 600-659</span>
                     </li>
-                    <li class="answer-btn q6-other">
+                    <li class="answer-btn q6-under">
                         <div class="select-icon"></div>
-                        <span class="question-text">Other</span>
+                        <span class="question-text">Under 600</span>
                     </li>
                 </ul>
             </div>
@@ -182,13 +179,21 @@
                         </svg>
                     </button>
                 </strong>
-                <h1>Desired Loan Amount?</h1>
+                <h1>Let's Get to Know You</h1>
                 <div class="text-input-box">
-                    <input type="text" class="amount-input" placeholder="Ex. $250,000">
+                    <input type="text" class="name-input" placeholder="Full Name" name="name">
+                    <span class="warning-text-name">Please Enter Your Full Name</span>
+                    <input type="text" class="email-input" placeholder="Email" name="email">
+                    <span class="warning-text-email">Please Enter a Valid Email</span>
+                    <input type="text" class="phone-input" placeholder="Phone Number" name="phone">
 
                     <button class="next-button q7-submit-btn" type="button">Submit →</button>
                 </div>
             </div>
+
+
+
+        
 
             <div class="question-box q8">
                 <strong class="questions-counter">

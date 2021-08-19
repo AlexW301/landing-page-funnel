@@ -204,6 +204,33 @@ input {
 
 }
 
+.submit-button:link,
+.submit-button:active {
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    background-color: #fa5252;
+    width: 160px;
+    border-radius: 200px;
+    color: #fff5f5;
+    text-transform: uppercase;
+    padding: 16px 32px;
+    align-self: center;
+    margin-top: 20px;
+    font-size: 18px;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit-button:hover,
+.submit-button:visited {
+    background-color: #ff6b6b;
+
+}
+
 .not-sure-btn {
     background-color: transparent;
     width: fit-content;
