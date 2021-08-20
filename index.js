@@ -17,7 +17,6 @@ formData.length = 7;
 
 document.querySelector('.q1-purchase').onclick = () => {
     //Record Answer
-    console.log('Purchase')
     formData[0] = 'Purchase'
     // Hide question
     document.querySelector('.q1').classList.remove('active-question')
@@ -29,7 +28,6 @@ document.querySelector('.q1-purchase').onclick = () => {
 
 document.querySelector('.q1-refinance').onclick = () => {
     //Record Answer
-    console.log('Refinance')
     formData[0] = 'Refinance'
     document.querySelector('.q1').classList.remove('active-question')
     //Show next question
