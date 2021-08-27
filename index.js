@@ -285,57 +285,6 @@ document.querySelector('.email-input').onclick = () => {
     document.querySelector('.warning-text-email').style.display = 'none'
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// // QUESTION #7 DESIRED LOAN AMOUNT
-
-// document.querySelector('.q7-submit-btn').onclick = () => {
-//     //Grab input info
-//     let loanAmount = document.querySelector('.amount-input').value
-//     if (loanAmount != '') {
-//         //update last item in array
-//         formData[6] = loanAmount
-//         //Send the data to firebase
-//         firebase.firestore().collection("completed-funnels").add({
-//             firstName: formData[1][0],
-//             lastName: formData[1][1],
-//             email: formData[1][2],
-//             phone: formData[1][3],
-//             purchaseOrRefi: formData[0],
-//             credit: formData[2],
-//             employment: formData[3],
-//             location: formData[4],
-//             propertyType: formData[5],
-//             loanAmount: formData[6],
-//             date: Date()
-//         }).then((docRef) => {
-//             console.log("Document written with ID: ", docRef.id);
-//         })
-//             .catch((error) => {
-//                 console.error("Error adding document: ", error);
-//             });
-//         //Go to the next screen
-//         document.querySelector('.q7').classList.remove('active-question')
-//         //Show next question
-//         document.querySelector('.q8').classList.add('active-question')
-//         document.querySelector('.completed').style.width = '100%';
-//     }
-// }
-
-
 // BACK BUTTONS
 
 // Q2 BACK
